@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="calculator">
+        <div class="display" id="display">0</div>
+        <div class="error-message" id="error-message"></div>
+        <div class="history" id="history"></div>
+
+        <div class="buttons">
+            <button class="button operator" onclick="clearAll()">C</button>
+            <button class="button" onclick="appendToDisplay('7')">7</button>
+            <button class="button" onclick="appendToDisplay('8')">8</button>
+            <button class="button" onclick="appendToDisplay('9')">9</button>
+            <button class="button operator" onclick="appendToDisplay('/')">÷</button>
+            <button class="button" onclick="appendToDisplay('4')">4</button>
+            <button class="button" onclick="appendToDisplay('5')">5</button>
+            <button class="button" onclick="appendToDisplay('6')">6</button>
+            <button class="button operator" onclick="appendToDisplay('*')">×</button>
+            <button class="button" onclick="appendToDisplay('1')">1</button>
+            <button class="button" onclick="appendToDisplay('2')">2</button>
+            <button class="button" onclick="appendToDisplay('3')">3</button>
+            <button class="button operator" onclick="appendToDisplay('-')">−</button>
+            <button class="button zero" onclick="appendToDisplay('0')">0</button>
+            <button class="button" onclick="appendToDisplay('.')">.</button>
+            <button class="button equals" onclick="calculate()">=</button>
+            <button class="button operator" onclick="appendToDisplay('+')">+</button>
+        </div>
+
+        <div class="advanced-toggle">
+            <button class="button" onclick="toggleAdvanced()">Toggle Advanced Functions</button>
+        </div>
+        <div class="advanced-functions" id="advanced-functions" style="display: none;">
+            <button class="button" onclick="calculatePercentage()">%</button>
+            <button class="button" onclick="calculateSquareRoot()">√</button>
+            <button class="button" onclick="memoryAdd()">M+</button>
+            <button class="button" onclick="memorySubtract()">M-</button>
+            <button class="button" onclick="memoryRecall()">MR</button>
+            <button class="button" onclick="toggleGraph()">Graph</button>
+            <button class="button" onclick="toggleUnitConverter()">Convert</button>
+            <button class="button" onclick="calculateSine()">sin</button>
+            <button class="button" onclick="calculateCosine()">cos</button>
+            <button class="button" onclick="calculateTangent()">tan</button>
+            <button class="button" onclick="calculateLogarithm()">log</button>
+            <button class="button" onclick="calculateExponent()">x²</button>
+        </div>
+
+        <div class="settings">
+            <button onclick="toggleTheme()">Toggle Theme</button>
+            <button onclick="toggleSound()">Sound: <span id="sound-status">On</span></button>
+            <button onclick="toggleMusic()">Music: <span id="music-status">Off</span></button>
+            <button onclick="saveHistory()">Save History</button>
+            <button onclick="clearHistory()">Clear History</button>
+        </div>
+
+        <div class="graph-container" id="graph-container" style="display: none;">
+            <canvas id="graph" width="400" height="200"></canvas>
+            <button onclick="toggleGraph()">Close Graph</button>
+        </div>
+
+        <div class="unit-converter" id="unit-converter" style="display: none;">
+            <h3>Unit Converter</h3>
+            <input type="number" id="valueToConvert" placeholder="Value">
+            <select id="unitSelect">
+                <option value="cmToInch">Centimeters to Inches</option>
+                <option value="inchToCm">Inches to Centimeters</option>
+                <option value="celsiusToFahrenheit">Celsius to Fahrenheit</option>
+                <option value="fahrenheitToCelsius">Fahrenheit to Celsius</option>
+            </select>
+            <button onclick="convertUnit()">Convert</button>
+            <div id="conversionResult"></div>
+            <button onclick="toggleUnitConverter()">Close Converter</button>
+        </div>
+    </div>
+    <audio id="buttonSound" src="1.mp3" preload="auto"></audio>
+    <audio id="backgroundMusic" src="2.mp3" preload="auto" loop></audio>
+    <script src="script.js"></script>
+</body>
+</html>
