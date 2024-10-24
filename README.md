@@ -39,7 +39,7 @@ playSound(): Plays sound effects when buttons are pressed to enhance user intera
 Acknowledgements
 I would like to extend my heartfelt thanks to the following individuals and organizations:
 
-Codsoft Team: For providing me with the opportunity to intern and gain valuable hands-on experience in software development. Your guidance and support have been instrumental in my learning journey.
+Codsoft Team: For providing me with the opportunity to intern and gain valuable hands-on experience in WEB development. Your guidance and support have been instrumental in my learning journey.
 
 Online Communities: A special mention to the countless online forums and programming communities that offer support and share knowledge, including Stack Overflow, GitHub, and various coding blogs.
 
