@@ -3,7 +3,7 @@ Simple Calculator
 GitHub Repository :-
 You can find the source code for the calculator project on my GitHub page :- (https://github.com/SHASHWAT13244/Simple-Calculator.git)
 
-You can view the live complete of the calculator project at :- ()
+You can view the live complete of the calculator project at :- (https://shashwat13244.github.io/Simple-Calculator/)
 
 Overview :-
 The Simple Calculator is a dynamic web application that provides an intuitive interface for performing a wide range of mathematical operations. Designed with a focus on user experience, this calculator supports both basic arithmetic and advanced functions, along with features like unit conversion and data visualization through graphs.
