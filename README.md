@@ -1,7 +1,7 @@
 Simple Calculator 
 
 GitHub Repository :-
-You can find the source code for the calculator project on my GitHub page :- ()
+You can find the source code for the calculator project on my GitHub page :- (https://github.com/SHASHWAT13244/Simple-Calculator.git)
 
 You can view the live complete of the calculator project at :- ()
 
